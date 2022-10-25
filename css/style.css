@@ -1,0 +1,204 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap');
+body{
+  background-color: gray;
+}
+.wrapper{
+  font-family: "Source Sans Pro";
+}
+.cap {
+  font-size: 45px;
+  font-weight: 900;
+  text-align: center;
+  
+}
+.cap h2:hover {
+  background-color: greenyellow;
+  color: green;
+  transition-duration: 3s;
+  transition-delay: 1s;
+} 
+.body__visible {
+  background-color: blueviolet;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  transition-duration: 3s;
+  transition-delay: 0.5s;
+}
+.body__visible:hover {
+  background: url(../img/кукурудза.webp)0 0/100% 100% no-repeat;
+  width: 400px;
+}
+
+
+.body__link {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  background-color: coral;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 5px;
+  position: relative;
+  left: 540px;
+  bottom: 100px;
+}
+.body__link-green {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 700;
+  display: inline-block;
+  background-color: green;
+  width: 100px;
+  height: 35px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 5px;
+  position: relative;
+  left: 590px;
+  bottom: 100px;
+}
+.body__link:hover{
+  color: chartreuse;
+}
+
+.body__link::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  left: 0;
+  height: 1px;
+  background-color: red;
+}
+.body__link:hover::after {
+  width: 100%;
+  transition: width 0.9s ease 0s;
+}
+.content__animation {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  left: 850px;
+  bottom: 140px;
+  border: dashed 5px #fff;
+  animation-name: rotate-block;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes  rotate-block{
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(90deg);
+  }
+}
+.content__circle {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 20px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  bottom: 30px;
+  animation: rotate-circle 3s linear infinite alternate 3s;
+}
+
+@keyframes rotate-circle {
+  0% {
+    transform: translate(0,0);
+  }
+
+  100% {
+    transform: translate(900px,0);
+  }
+}
+.content__circle:hover{
+  animation-play-state: paused;
+}
+
+.box__blok-one{
+  height: 150px;
+  width: 150px;
+  border: dotted 1px #fff;
+  position: relative;
+  transition-duration: 3s;
+  transition-delay: 0.5s;
+}
+.box__blok-two {
+  height: 150px;
+  width: 150px;
+  border: dotted 1px #fff;
+  position: relative;
+  left: 200px;
+  bottom: 150px;
+  transition-duration: 3s;
+  transition-delay: 0.5s;
+}
+
+
+.box__blok-thre {
+  height: 150px;
+  width: 150px;
+  border: dotted 1px #fff;
+  position: relative;
+  left: 400px;
+  bottom: 300px;
+  transition-duration: 3s;
+  transition-delay: 0.5s;
+}
+.box__blok-four {
+  height: 150px;
+  width: 150px;
+  border: dotted 1px #fff;
+  position: relative;
+  left: 600px;
+  bottom: 450px;
+}
+
+.box__blok-five {
+  height: 150px;
+  width: 150px;
+  border: dotted 1px #fff;
+  position: relative;
+  left: 800px;
+  bottom: 600px;
+  transition-duration: 3s;
+  transition-delay: 0.5s;
+}
+.box__blok-one:hover{
+  background: url(../img/Screenshot_1.webp)0 0/150px 150px no-repeat;
+  transform: rotate3d(1, 2, 1, 35deg);
+  transition-duration: 3s;
+  transform: translate(30px, 30px) rotate(45deg) scale(0.8);
+}
+.box__blok-two:hover {
+  background: url(../img/Screenshot_3.webp)0 0/150px 150px no-repeat;
+  transition-duration: 3s;
+  transform: translate(30px, 30px);
+}
+
+.box__blok-thre:hover {
+  background: url(../img/Screenshot_4.webp)0 0/150px 150px no-repeat;
+  transition-duration: 3s;
+  transform: translate(30px, 30px) rotate(45deg) scale(0.8);
+}
+.box__blok-four:hover {
+  background: url(../img/Screenshot_6.webp)0 0/150px 150px no-repeat;
+  transition-duration: 3s;
+  transform: skew(20deg);
+}
+.box__blok-five:hover {
+  background: url(../img/Screenshot_7.webp)0 0/150px 150px no-repeat;
+  transform: translate(30px, 30px);
+}
